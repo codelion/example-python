@@ -1,14 +1,15 @@
-# [:] Example Python 2 Project
+## Summary of Code Contents
 
-An example Python project to demonstrate [srcclr](https://www.srcclr.com) scans.
+### Inputs:
+1. **requirements.txt:**
+   - Contains a list of Python package dependencies.
 
-Check out the [python3](https://github.com/srcclr/example-python/tree/python3) branch for a project that builds with Python 3.
+2. **README.md:**
+   - Markdown file providing information about the project, including installation instructions.
+   
+3. **main.py:**
+   - Python script that imports and utilizes functions from various libraries like `jwt`, `django`, `rsa`, and `requests`.
 
-## Try me!
-
-```
-brew tap srcclr/srcclr
-brew install srcclr
-srcclr activate
-srcclr scan --url https://github.com/srcclr/example-python
-```
+### Outputs:
+- Information about the size, creation, and modification times of each file.
+- Code snippets from each file demonstrating their contents.

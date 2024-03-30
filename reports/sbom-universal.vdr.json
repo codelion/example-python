@@ -1,0 +1,1597 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:f0522567-2c7c-41cd-8366-301c4b4d1920",
+    "version": 2,
+    "metadata": {
+        "timestamp": "2024-03-30T00:15:37.618Z",
+        "tools": {
+            "components": [
+                {
+                    "group": "@cyclonedx",
+                    "name": "cdxgen",
+                    "version": "10.2.4",
+                    "purl": "pkg:npm/%40cyclonedx/cdxgen@10.2.4",
+                    "type": "application",
+                    "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.2.4",
+                    "author": "OWASP Foundation",
+                    "publisher": "OWASP Foundation"
+                },
+                {
+                    "type": "application",
+                    "name": "owasp-depscan",
+                    "version": "5.2.12",
+                    "purl": "pkg:pypi/owasp-depscan@5.2.12",
+                    "bom-ref": "pkg:pypi/owasp-depscan@5.2.12"
+                }
+            ]
+        },
+        "authors": [
+            {
+                "name": "OWASP Foundation"
+            }
+        ],
+        "lifecycles": [
+            {
+                "phase": "build"
+            }
+        ],
+        "component": {
+            "group": "",
+            "name": "example-python",
+            "version": "undefined",
+            "type": "application",
+            "bom-ref": "pkg:gem/example-python@undefined",
+            "purl": "pkg:gem/example-python@undefined"
+        }
+    },
+    "components": [
+        {
+            "author": "Django Software Foundation <foundation@djangoproject.com>",
+            "group": "",
+            "name": "django",
+            "version": "2.2.24",
+            "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "f2084ceecff86b1e631c2cd4107d435daf4e12f1efcdf11061a73bf0b5e95f92"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD",
+                        "url": "https://opensource.org/licenses/0BSD"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "BSD-3-Clause",
+                        "url": "https://opensource.org/licenses/BSD-3-Clause"
+                    }
+                }
+            ],
+            "purl": "pkg:pypi/django@2.2.24",
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://www.djangoproject.com/"
+                }
+            ],
+            "type": "framework",
+            "bom-ref": "pkg:pypi/django@2.2.24",
+            "properties": [
+                {
+                    "name": "cdx:pypi:latest_version",
+                    "value": "5.0.3"
+                },
+                {
+                    "name": "cdx:pypi:resolved_from",
+                    "value": "django"
+                }
+            ]
+        },
+        {
+            "author": "Jose Padilla <hello@jpadilla.com>",
+            "group": "",
+            "name": "PyJWT",
+            "version": "0.4.2",
+            "description": "JSON Web Token implementation in Python",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "2d30be6375be006a6fec531ba15ec9a7cf3ac88fd6ea3caa2b6f86a84c372acc"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT",
+                        "url": "https://opensource.org/licenses/MIT"
+                    }
+                }
+            ],
+            "purl": "pkg:pypi/pyjwt@0.4.2",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/jpadilla/pyjwt"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:pypi/pyjwt@0.4.2",
+            "properties": [
+                {
+                    "name": "cdx:pypi:latest_version",
+                    "value": "2.8.0"
+                },
+                {
+                    "name": "cdx:pypi:resolved_from",
+                    "value": "PyJWT"
+                }
+            ]
+        },
+        {
+            "author": "Sybren A. St\u00fcvel <sybren@stuvel.eu>",
+            "group": "",
+            "name": "rsa",
+            "version": "3.4",
+            "description": "Pure-Python RSA implementation",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "0c7fde631f84f89e89ec671a9c58feb01ea25fab177dca08ba08650c548d48d5"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Apache-2.0",
+                        "url": "https://opensource.org/licenses/Apache-2.0"
+                    }
+                }
+            ],
+            "purl": "pkg:pypi/rsa@3.4",
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://stuvel.eu/rsa"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:pypi/rsa@3.4",
+            "properties": [
+                {
+                    "name": "cdx:pypi:latest_version",
+                    "value": "4.9"
+                },
+                {
+                    "name": "cdx:pypi:resolved_from",
+                    "value": "rsa"
+                }
+            ]
+        },
+        {
+            "author": "Kenneth Reitz <me@kennethreitz.org>",
+            "group": "",
+            "name": "requests",
+            "version": "2.30.0",
+            "description": "Python HTTP for Humans.",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "10e94cc4f3121ee6da529d358cdaeaff2f1c409cd377dbc72b825852f2f7e294"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Apache-2.0",
+                        "url": "https://opensource.org/licenses/Apache-2.0"
+                    }
+                }
+            ],
+            "purl": "pkg:pypi/requests@2.30.0",
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://requests.readthedocs.io"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:pypi/requests@2.30.0",
+            "properties": [
+                {
+                    "name": "cdx:pypi:latest_version",
+                    "value": "2.31.0"
+                },
+                {
+                    "name": "cdx:pypi:resolved_from",
+                    "value": "requests"
+                }
+            ]
+        },
+        {
+            "author": "Kurt McKee <contactme@kurtmckee.org>",
+            "group": "",
+            "name": "feedparser",
+            "version": "5.1.1",
+            "description": "Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "ae099763f4538aa08c5021d42ba6ce5b9b6218e71423c96031153f379955481a"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD",
+                        "url": "https://opensource.org/licenses/0BSD"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "BSD-2-Clause",
+                        "url": "https://opensource.org/licenses/BSD-2-Clause"
+                    }
+                }
+            ],
+            "purl": "pkg:pypi/feedparser@5.1.1",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/kurtmckee/feedparser"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:pypi/feedparser@5.1.1",
+            "properties": [
+                {
+                    "name": "cdx:pypi:latest_version",
+                    "value": "6.0.11"
+                },
+                {
+                    "name": "cdx:pypi:resolved_from",
+                    "value": "feedparser"
+                }
+            ]
+        },
+        {
+            "author": "Dwayne C. Litzenberger <dlitz@dlitz.net>",
+            "group": "",
+            "name": "pycrypto",
+            "version": "2.4",
+            "description": "Cryptographic modules for Python.",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "f49d8aea2d7d65db9906c7d3b8b3a07fcae8387cf5cb06a7510383e211902d39"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "Public Domain"
+                    }
+                },
+                {
+                    "license": {
+                        "name": "Public domain"
+                    }
+                }
+            ],
+            "purl": "pkg:pypi/pycrypto@2.4",
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "http://www.pycrypto.org/"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:pypi/pycrypto@2.4",
+            "properties": [
+                {
+                    "name": "cdx:pypi:latest_version",
+                    "value": "2.6.1"
+                },
+                {
+                    "name": "cdx:pypi:resolved_from",
+                    "value": "pycrypto"
+                }
+            ]
+        },
+        {
+            "author": "Sentry <hello@getsentry.com>",
+            "group": "",
+            "name": "raven",
+            "version": "1.9.4",
+            "description": "Raven is a client for Sentry (https://getsentry.com)",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "7f14e651d321aedaf00635ab106b72520e4a6565d766b8fc64856e662c3acc8c"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "0BSD",
+                        "url": "https://opensource.org/licenses/0BSD"
+                    }
+                }
+            ],
+            "purl": "pkg:pypi/raven@1.9.4",
+            "externalReferences": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/getsentry/raven-python"
+                }
+            ],
+            "type": "library",
+            "bom-ref": "pkg:pypi/raven@1.9.4",
+            "properties": [
+                {
+                    "name": "cdx:pypi:latest_version",
+                    "value": "6.10.0"
+                },
+                {
+                    "name": "cdx:pypi:resolved_from",
+                    "value": "raven"
+                }
+            ]
+        }
+    ],
+    "services": [],
+    "dependencies": [],
+    "vulnerabilities": [
+        {
+            "bom-ref": "CVE-2022-28347/pkg:pypi/django@2.2.24",
+            "id": "CVE-2022-28347",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-28347"
+            },
+            "ratings": [
+                {
+                    "score": 9.8,
+                    "severity": "critical",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                89
+            ],
+            "description": "# SQL Injection in Django\nA SQL injection issue was discovered in `QuerySet.explain()` in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. This occurs by passing a crafted dictionary (with dictionary expansion) as the `**options` argument, and placing the injection payload in an option name.\n\n## Related CVE(s)\nBIT-django-2022-28347, CVE-2022-28347, PYSEC-2022-191",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2022/apr/11/security-releases"
+                },
+                {
+                    "title": "GitHub Advisory",
+                    "url": "https://github.com/advisories/GHSA-w24h-v9qh-8gxj"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://www.openwall.com/lists/oss-security/2022/04/11/1"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.openwall.com/lists/oss-security/2022/04/11/1"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "https://www.debian.org/security/2022/dsa-5254"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=2.2-<2.2.28"
+                }
+            ],
+            "published": "2022-04-13T00:00:33",
+            "updated": "2024-02-18T05:26:48"
+        },
+        {
+            "bom-ref": "CVE-2012-2921/pkg:pypi/feedparser@5.1.1",
+            "id": "CVE-2012-2921",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2921"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Moderate severity vulnerability that affects feedparser\nUniversal Feed Parser (aka feedparser or python-feedparser) before 5.1.2 allows remote attackers to cause a denial of service (memory consumption) via a crafted XML ENTITY declaration in a non-ASCII encoded document.\n\n## Related CVE(s)\nCVE-2012-2921, PYSEC-2012-14",
+            "recommendation": "",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "http://www.securityfocus.com/bid/53654"
+                },
+                {
+                    "title": "GitHub Advisory",
+                    "url": "https://github.com/advisories/GHSA-hjf3-r7gw-9rwg"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/feedparser@5.1.1",
+                    "versions": [
+                        {
+                            "version": "5.1.1",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "feedparser@>=4.1-<=5.1.1"
+                }
+            ],
+            "published": "2018-07-24T20:00:41",
+            "updated": "2023-11-08T03:57:05"
+        },
+        {
+            "bom-ref": "CVE-2021-45452/pkg:pypi/django@2.2.24",
+            "id": "CVE-2021-45452",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45452"
+            },
+            "ratings": [
+                {
+                    "score": 5.3,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                22
+            ],
+            "description": "# Directory-traversal in Django\nStorage.save in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1 allows directory traversal if crafted filenames are directly passed to it.\n\n## Related CVE(s)\nBIT-django-2021-45452, CVE-2021-45452, PYSEC-2022-3",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2022/jan/04/security-releases"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=2.2.0-<2.2.26"
+                }
+            ],
+            "published": "2022-01-12T19:21:04",
+            "updated": "2024-02-18T05:43:17"
+        },
+        {
+            "bom-ref": "CVE-2017-11424/pkg:pypi/pyjwt@0.4.2",
+            "id": "CVE-2017-11424",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-11424"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                    "method": "CVSSv3"
+                }
+            ],
+            "cwes": [],
+            "description": "# PyJWT vulnerable to key confusion attacks\nIn PyJWT 1.5.0 and below the `invalid_strings` check in `HMACAlgorithm.prepare_key` does not account for all PEM encoded public keys. Specifically, the PKCS1 PEM encoded format would be allowed because it is prefaced with the string `-----BEGIN RSA PUBLIC KEY-----` which is not accounted for. This enables symmetric/asymmetric key confusion attacks against users using the PKCS1 PEM encoded public keys, which would allow an attacker to craft JWTs from scratch.\n\n## Related CVE(s)\nCVE-2017-11424, PYSEC-2017-24",
+            "recommendation": "",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/jpadilla/pyjwt"
+                },
+                {
+                    "title": "GitHub PR",
+                    "url": "https://github.com/jpadilla/pyjwt/pull/277"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "http://www.debian.org/security/2017/dsa-3979"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.debian.org/security/2017/dsa-3979"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/pyjwt@0.4.2",
+                    "versions": [
+                        {
+                            "version": "0.4.2",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "pyjwt@>=0.1.1-<=1.5.0"
+                }
+            ],
+            "published": "2022-05-13T01:42:19",
+            "updated": "2023-11-08T03:58:49"
+        },
+        {
+            "bom-ref": "CVE-2022-28346/pkg:pypi/django@2.2.24",
+            "id": "CVE-2022-28346",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-28346"
+            },
+            "ratings": [
+                {
+                    "score": 9.8,
+                    "severity": "critical",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                89
+            ],
+            "description": "An issue was discovered in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. QuerySet.annotate(), aggregate(), and extra() methods are subject to SQL injection in column aliases via a crafted dictionary (with dictionary expansion) as the passed **kwargs.",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LTZVAKU5ALQWOKFTPISE257VCVIYGFQI/"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://www.debian.org/security/2022/dsa-5254"
+                },
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2022/apr/11/security-releases/"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "https://www.debian.org/security/2022/dsa-5254"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=2.2-<2.2.28"
+                }
+            ],
+            "published": "2022-04-12T05:15:06",
+            "updated": "2023-11-07T03:45:41"
+        },
+        {
+            "bom-ref": "CVE-2021-45115/pkg:pypi/django@2.2.24",
+            "id": "CVE-2021-45115",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45115"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                400
+            ],
+            "description": "# Denial-of-service in Django\nAn issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. `UserAttributeSimilarityValidator` incurred significant overhead in evaluating a submitted password that was artificially large in relation to the comparison values. In a situation where access to user registration was unrestricted, this provided a potential vector for a denial-of-service attack.\n\n## Related CVE(s)\nBIT-django-2021-45115, CVE-2021-45115, PYSEC-2022-1",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2022/jan/04/security-releases"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=2.2.0-<2.2.26"
+                }
+            ],
+            "published": "2022-01-12T19:20:53",
+            "updated": "2024-03-07T23:45:59"
+        },
+        {
+            "bom-ref": "CVE-2022-22818/pkg:pypi/django@2.2.24",
+            "id": "CVE-2022-22818",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22818"
+            },
+            "ratings": [
+                {
+                    "score": 6.1,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                79
+            ],
+            "description": "# Cross-site Scripting in Django\nThe `{% debug %}` template tag in Django 2.2 before 2.2.27, 3.2 before 3.2.12, and 4.0 before 4.0.2 does not properly encode the current context. This may lead to XSS.\n\n## Related CVE(s)\nBIT-django-2022-22818, CVE-2022-22818, PYSEC-2022-19",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2022/feb/01/security-releases"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://www.debian.org/security/2022/dsa-5254"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "https://www.debian.org/security/2022/dsa-5254"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=2.2.0-<2.2.27"
+                }
+            ],
+            "published": "2022-02-04T00:00:33",
+            "updated": "2024-02-19T05:34:06"
+        },
+        {
+            "bom-ref": "CVE-2021-44420/pkg:pypi/django@2.2.24",
+            "id": "CVE-2021-44420",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44420"
+            },
+            "ratings": [
+                {
+                    "score": 7.3,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                287
+            ],
+            "description": "# Potential bypass of an upstream access control based on URL paths in Django\nIn Django 2.2 before 2.2.25, 3.1 before 3.1.14, and 3.2 before 3.2.10, HTTP requests for URLs with trailing newlines could bypass upstream access control based on URL paths. This issue has low severity, according to the Django security policy.\n\n## Related CVE(s)\nBIT-django-2021-44420, CVE-2021-44420, PYSEC-2021-439",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2021/dec/07/security-releases"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://www.openwall.com/lists/oss-security/2021/12/07/1"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://www.openwall.com/lists/oss-security/2021/12/07/1"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=0-<2.2.25"
+                }
+            ],
+            "published": "2021-12-09T19:09:37",
+            "updated": "2024-02-17T05:43:37"
+        },
+        {
+            "bom-ref": "CVE-2020-25658/pkg:pypi/rsa@3.4",
+            "id": "CVE-2020-25658",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-25658"
+            },
+            "ratings": [
+                {
+                    "score": 5.9,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                327,
+                385
+            ],
+            "description": "# Timing attacks in python-rsa\nIt was found that python-rsa is vulnerable to Bleichenbacher timing attacks. An attacker can use this flaw via the RSA decryption API to decrypt parts of the cipher text encrypted with RSA\n\n## Related CVE(s)\nCVE-2020-25658, PYSEC-2020-100",
+            "recommendation": "",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/sybrenstuvel/python-rsa"
+                },
+                {
+                    "title": "GitHub Issue",
+                    "url": "https://github.com/sybrenstuvel/python-rsa/issues/165"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QY4PJWTYSOV7ZEYZVMYIF6XRU73CY6O7"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QY4PJWTYSOV7ZEYZVMYIF6XRU73CY6O7"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/rsa@3.4",
+                    "versions": [
+                        {
+                            "version": "3.4",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "rsa@>=1.1-<=4.6"
+                }
+            ],
+            "published": "2021-04-30T17:35:15",
+            "updated": "2024-02-22T05:34:09"
+        },
+        {
+            "bom-ref": "CVE-2023-32681/pkg:pypi/requests@2.30.0",
+            "id": "CVE-2023-32681",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-32681"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Unintended leak of Proxy-Authorization header in requests\n### Impact\n\nSince Requests v2.3.0, Requests has been vulnerable to potentially leaking `Proxy-Authorization` headers to destination servers, specifically during redirects to an HTTPS origin. This is a product of how `rebuild_proxies` is used to recompute and [reattach the `Proxy-Authorization` header](https://github.com/psf/requests/blob/f2629e9e3c7ce3c3c8c025bcd8db551101cbc773/requests/sessions.py#L319-L328) to requests when redirected. Note this behavior has _only_ been observed to affect proxied requests when credentials are supplied in the URL user information component (e.g. `https://username:password@proxy:8080`).\n\n**Current vulnerable behavior(s):**\n\n1. HTTP \u2192 HTTPS: **leak**\n2. HTTPS \u2192 HTTP: **no leak**\n3. HTTPS \u2192 HTTPS: **leak**\n4. HTTP \u2192 HTTP: **no leak**\n\nFor HTTP connections sent through the proxy, the proxy will identify the header in the request itself and remove it prior to forwarding to the destination server. However when sent over HTTPS, the `Proxy-Authorization` header must be sent in the CONNECT request as the proxy has no visibility into further tunneled requests. This results in Requests forwarding the header to the destination server unintentionally, allowing a malicious actor to potentially exfiltrate those credentials.\n\nThe reason this currently works for HTTPS connections in Requests is the `Proxy-Authorization` header is also handled by urllib3 with our usage of the ProxyManager in adapters.py with [`proxy_manager_for`](https://github.com/psf/requests/blob/f2629e9e3c7ce3c3c8c025bcd8db551101cbc773/requests/adapters.py#L199-L235). This will compute the required proxy headers in `proxy_headers` and pass them to the Proxy Manager, avoiding attaching them directly to the Request object. This will be our preferred option going forward for default usage.\n\n### Patches\nStarting in Requests v2.31.0, Requests will no longer attach this header to redirects with an HTTPS destination. This should have no negative impacts on the default behavior of the library as the proxy credentials are already properly being handled by urllib3's ProxyManager.\n\nFor users with custom adapters, this _may_ be potentially breaking if you were already working around this behavior. The previous functionality of `rebuild_proxies` doesn't make sense in any case, so we would encourage any users impacted to migrate any handling of Proxy-Authorization directly into their custom adapter.\n\n### Workarounds\nFor users who are not able to update Requests immediately, there is one potential workaround.\n\nYou may disable redirects by setting `allow_redirects` to `False` on all calls through Requests top-level APIs. Note that if you're currently relying on redirect behaviors, you will need to capture the 3xx response codes and ensure a new request is made to the redirect destination.\n```\nimport requests\nr = requests.get('http://github.com/', allow_redirects=False)\n```\n\n### Credits\n\nThis vulnerability was discovered and disclosed by the following individuals.\n\nDennis Brinkrolf, Haxolot (https://haxolot.com/)\nTobias Funke, (tobiasfunke93@gmail.com)",
+            "recommendation": "Update to 2.31.0 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/pypa/advisory-database/tree/main/vulns/requests/PYSEC-2023-74.yaml"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KOYASTZDGQG2BWLSNBPL3TQRL2G7QYNZ"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KOYASTZDGQG2BWLSNBPL3TQRL2G7QYNZ"
+                },
+                {
+                    "title": "Gentoo Security",
+                    "url": "https://security.gentoo.org/glsa/202309-08"
+                },
+                {
+                    "title": "GitHub Advisory",
+                    "url": "https://github.com/advisories/GHSA-j8r2-6x86-q33q"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/requests@2.30.0",
+                    "versions": [
+                        {
+                            "version": "2.30.0",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.31.0",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "requests@>=2.3.0-<2.31.0"
+                }
+            ],
+            "published": "2023-05-22T20:36:32",
+            "updated": "2024-03-12T17:11:27"
+        },
+        {
+            "bom-ref": "CVE-2022-23833/pkg:pypi/django@2.2.24",
+            "id": "CVE-2022-23833",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23833"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                835
+            ],
+            "description": "# Infinite Loop in Django\nAn issue was discovered in MultiPartParser in Django 2.2 before 2.2.27, 3.2 before 3.2.12, and 4.0 before 4.0.2. Passing certain inputs to multipart forms could result in an infinite loop when parsing files.\n\n## Related CVE(s)\nBIT-django-2022-23833, CVE-2022-23833, PYSEC-2022-20",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2022/feb/01/security-releases"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://www.debian.org/security/2022/dsa-5254"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "https://www.debian.org/security/2022/dsa-5254"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=2.2.0-<2.2.27"
+                }
+            ],
+            "published": "2022-02-04T00:00:26",
+            "updated": "2024-02-16T08:11:59"
+        },
+        {
+            "bom-ref": "CVE-2013-7459/pkg:pypi/pycrypto@2.4",
+            "id": "CVE-2013-7459",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-7459"
+            },
+            "ratings": [
+                {
+                    "score": 9.8,
+                    "severity": "critical",
+                    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                    "method": "CVSSv3"
+                }
+            ],
+            "cwes": [
+                119
+            ],
+            "description": "# Buffer Overflow in pycrypto\nHeap-based buffer overflow in the ALGnew function in block_templace.c in Python Cryptography Toolkit (aka pycrypto) allows remote attackers to execute arbitrary code as demonstrated by a crafted iv parameter to cryptmsg.py.\n\n## Related CVE(s)\nCVE-2013-7459, PYSEC-2017-94",
+            "recommendation": "Update to 2.6 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "http://www.securityfocus.com/bid/95122"
+                },
+                {
+                    "title": "GitHub Issue",
+                    "url": "https://github.com/dlitz/pycrypto/issues/176"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.openwall.com/lists/oss-security/2016/12/27/8"
+                },
+                {
+                    "title": "GitHub Advisory",
+                    "url": "https://github.com/advisories/GHSA-cq27-v7xp-c356"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://www.openwall.com/lists/oss-security/2016/12/27/8"
+                },
+                {
+                    "title": "Gentoo Security",
+                    "url": "https://security.gentoo.org/glsa/201702-14"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/pycrypto@2.4",
+                    "versions": [
+                        {
+                            "version": "2.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.6",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "pycrypto@>=1.9a2-<=2.6.1"
+                }
+            ],
+            "published": "2018-12-14T18:51:38",
+            "updated": "2024-02-16T08:20:43"
+        },
+        {
+            "bom-ref": "CVE-2021-45116/pkg:pypi/django@2.2.24",
+            "id": "CVE-2021-45116",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45116"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                20
+            ],
+            "description": "An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. Due to leveraging the Django Template Language's variable resolution logic, the dictsort template filter was potentially vulnerable to information disclosure, or an unintended method call, if passed a suitably crafted key.",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2022/jan/04/security-releases/"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV/"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/B4SQG2EAF4WCI2SLRL6XRDJ3RPK3ZRDV/"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=2.2-<2.2.26"
+                }
+            ],
+            "published": "2022-01-05T00:15:07",
+            "updated": "2023-11-07T03:39:49"
+        },
+        {
+            "bom-ref": "CVE-2024-24680/pkg:pypi/django@2.2.24",
+            "id": "CVE-2024-24680",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24680"
+            },
+            "ratings": [
+                {
+                    "score": 5.0,
+                    "severity": "medium",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Django denial-of-service attack in the intcomma template filter\nAn issue was discovered in Django 3.2 before 3.2.24, 4.2 before 4.2.10, and Django 5.0 before 5.0.2. The intcomma template filter was subject to a potential denial-of-service attack when used with very long strings.\n\n## Related CVE(s)\nBIT-django-2024-24680, CVE-2024-24680, PYSEC-2024-28",
+            "recommendation": "Update to 2.2.28 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://www.djangoproject.com/weblog/2024/feb/06/security-releases"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/django@2.2.24",
+                    "versions": [
+                        {
+                            "version": "2.2.24",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.2.28",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": ""
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "django@>=1.0.1-<=3.2rc1"
+                }
+            ],
+            "published": "2024-02-07T00:30:25",
+            "updated": "2024-02-17T05:35:02"
+        },
+        {
+            "bom-ref": "CVE-2013-1445/pkg:pypi/pycrypto@2.4",
+            "id": "CVE-2013-1445",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-1445"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Summary\nThe Crypto.Random.atfork function in PyCrypto before 2.6.1 does not properly reseed the pseudo-random number generator (PRNG) before allowing a child process to access it, which makes it easier for context-dependent attackers to obtain sensitive information by leveraging a race condition in which a child process is created and accesses the PRNG within the same rate-limit period as another process.",
+            "recommendation": "Update to 2.6 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/dlitz/pycrypto/commit/19dcf7b15d61b7dc1a125a367151de40df6ef175"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "http://www.debian.org/security/2013/dsa-2781"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.openwall.com/lists/oss-security/2013/10/17/3"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://www.openwall.com/lists/oss-security/2013/10/17/3"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/pycrypto@2.4",
+                    "versions": [
+                        {
+                            "version": "2.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.6",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "pycrypto@>=1.9a2-<=2.6"
+                }
+            ],
+            "published": "2013-10-26T17:55:00",
+            "updated": "2023-11-08T03:57:14"
+        },
+        {
+            "bom-ref": "CVE-2020-13757/pkg:pypi/rsa@3.4",
+            "id": "CVE-2020-13757",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13757"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [
+                327
+            ],
+            "description": "# Python-RSA decryption of ciphertext leads to DoS\nPython-RSA before 4.1 ignores leading '\u0000' bytes during decryption of ciphertext. This could conceivably have a security-relevant impact, e.g., by helping an attacker to infer that an application uses Python-RSA, or if the length of accepted ciphertext affects application behavior (such as by causing excessive memory allocation).\n\n## Related CVE(s)\nCVE-2020-13757, PYSEC-2020-99",
+            "recommendation": "",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/sybrenstuvel/python-rsa"
+                },
+                {
+                    "title": "GitHub Issue",
+                    "url": "https://github.com/sybrenstuvel/python-rsa/issues/146#issuecomment-641845667"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZYB65VNILRBTXL6EITQTH2PZPK7I23MW"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://usn.ubuntu.com/4478-1"
+                },
+                {
+                    "title": "Ubuntu Security",
+                    "url": "https://usn.ubuntu.com/4478-1"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/rsa@3.4",
+                    "versions": [
+                        {
+                            "version": "3.4",
+                            "status": "affected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "rsa@>=1.1-<=4.0"
+                }
+            ],
+            "published": "2021-03-24T18:24:39",
+            "updated": "2024-02-22T05:33:09"
+        },
+        {
+            "bom-ref": "CVE-2012-2417/pkg:pypi/pycrypto@2.4",
+            "id": "CVE-2012-2417",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2417"
+            },
+            "ratings": [
+                {
+                    "score": 2.0,
+                    "severity": "low",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "method": "CVSSv31"
+                }
+            ],
+            "cwes": [],
+            "description": "# Summary\nPyCrypto before 2.6 does not produce appropriate prime numbers when using an ElGamal scheme to generate a key, which reduces the signature space or public key space and makes it easier for attackers to conduct brute force attacks to obtain the private key.",
+            "recommendation": "Update to 2.6 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/75871"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081713.html"
+                },
+                {
+                    "title": "vendor",
+                    "url": "http://www.debian.org/security/2012/dsa-2502"
+                },
+                {
+                    "title": "Debian Security",
+                    "url": "http://www.debian.org/security/2012/dsa-2502"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/pycrypto@2.4",
+                    "versions": [
+                        {
+                            "version": "2.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.6",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "pycrypto@>=0-<2.6"
+                }
+            ],
+            "published": "2012-06-17T03:41:00",
+            "updated": "2023-11-08T03:57:05"
+        },
+        {
+            "bom-ref": "CVE-2018-6594/pkg:pypi/pycrypto@2.4",
+            "id": "CVE-2018-6594",
+            "source": {
+                "name": "NVD",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-6594"
+            },
+            "ratings": [
+                {
+                    "score": 7.5,
+                    "severity": "high",
+                    "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                    "method": "CVSSv3"
+                }
+            ],
+            "cwes": [
+                326
+            ],
+            "description": "# Pycrypto generates weak key parameters\nlib/Crypto/PublicKey/ElGamal.py in PyCrypto through 2.6.1 generates weak ElGamal key parameters, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for PyCrypto's ElGamal implementation.\n\n## Related CVE(s)\nCVE-2018-6594, PYSEC-2018-97",
+            "recommendation": "Update to 2.6 or later",
+            "advisories": [
+                {
+                    "title": "other",
+                    "url": "https://github.com/dlitz/pycrypto"
+                },
+                {
+                    "title": "GitHub Issue",
+                    "url": "https://github.com/dlitz/pycrypto/issues/253"
+                },
+                {
+                    "title": "GitHub Advisory",
+                    "url": "https://github.com/advisories/GHSA-6528-wvf6-f6qg"
+                },
+                {
+                    "title": "Mailing List",
+                    "url": "https://lists.debian.org/debian-lts-announce/2018/02/msg00018.html"
+                },
+                {
+                    "title": "vendor",
+                    "url": "https://usn.ubuntu.com/3616-2"
+                },
+                {
+                    "title": "Gentoo Security",
+                    "url": "https://security.gentoo.org/glsa/202007-62"
+                },
+                {
+                    "title": "Ubuntu Security",
+                    "url": "https://usn.ubuntu.com/3616-2"
+                }
+            ],
+            "analysis": {},
+            "affects": [
+                {
+                    "ref": "pkg:pypi/pycrypto@2.4",
+                    "versions": [
+                        {
+                            "version": "2.4",
+                            "status": "affected"
+                        },
+                        {
+                            "version": "2.6",
+                            "status": "unaffected"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "name": "depscan:insights",
+                    "value": "Vendor Confirmed"
+                },
+                {
+                    "name": "depscan:prioritized",
+                    "value": "false"
+                },
+                {
+                    "name": "affectedVersionRange",
+                    "value": "pycrypto@>=1.9a2-<=2.6.1"
+                }
+            ],
+            "published": "2018-07-12T20:29:26",
+            "updated": "2024-02-16T08:05:59"
+        }
+    ]
+}

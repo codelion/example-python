@@ -11,8 +11,8 @@ if __name__ == '__main__':
     sessions.SessionRedirectMixin.resolve_redirects()
     session = requests.Session()
     proxies = {
-        'http': 'http://test:pass@localhost:8080',
-        'https': 'http://test:pass@localhost:8090',
+        'http': 'http://test:pass@localhost:8080/',
+        'https': 'http://test:pass@localhost:8090/',
     }
     req = requests.Request('GET', url)
     prep = req.prepare()

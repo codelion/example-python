@@ -2,7 +2,7 @@ from jwt import algorithms
 from django.utils import formats
 from rsa import cli
 from requests import sessions
-import request
+import requests
 
 if __name__ == '__main__':
     formats.get_format()
@@ -12,7 +12,7 @@ if __name__ == '__main__':
     session = requests.Session()
     proxies = {
         'http': 'http://test:pass@localhost:8080',
-        'https': 'http://test:pass@localhost:8090',
+        'https': 'https://test:pass@localhost:8090',
     }
     req = requests.Request('GET', url)
     prep = req.prepare()

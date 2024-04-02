@@ -16,4 +16,5 @@ if __name__ == '__main__':
     }
     req = requests.Request('GET', url)
     prep = req.prepare()
+    prep.headers['Proxy-Authorization'] = None
     session.rebuild_proxies(prep, proxies)

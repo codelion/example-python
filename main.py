@@ -16,4 +16,5 @@ if __name__ == '__main__':
     }
     req = requests.Request('GET', url)
     prep = req.prepare()
-    session.rebuild_proxies(prep, proxies)
+    if not prep.is_proxy():
+        session.rebuild_proxies(prep, proxies)

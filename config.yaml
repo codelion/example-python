@@ -1,0 +1,8 @@
+import os
+
+if os.environ.get('API_KEY') is None:
+    print("API key is not set")
+else:
+    api_key = os.environ['API_KEY']
+    # Make API call using the set API key
+    # ...

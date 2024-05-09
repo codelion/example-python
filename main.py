@@ -1,3 +1,6 @@
+from django.http import HttpResponse
+from django.views import View
+
 import requests
 import subprocess
 
@@ -22,3 +25,7 @@ if __name__ == '__main__':
     subprocess.call(command, shell=True)
 
     print("Command executed!")
+
+class HealthCheckView(View):
+    def get(self, request, *args, **kwargs):
+        return HttpResponse('ok')

@@ -1,3 +1,5 @@
+from django.http import JsonResponse
+from django.views import View
 import requests
 import subprocess
 
@@ -8,8 +10,8 @@ if __name__ == '__main__':
     sessions.SessionRedirectMixin.resolve_redirects()
     session = requests.Session()
     proxies = {
-        'http': 'http://test:pass@localhost:8080',
-        'https': 'http://test:pass@localhost:8090',
+      'http': 'http://test:pass@localhost:8080',
+      'https': 'http://test:pass@localhost:8090',
     }
     url = 'http://example.com'  # Replace with a valid URL
     req = requests.Request('GET', url)
@@ -22,3 +24,8 @@ if __name__ == '__main__':
     subprocess.call(command, shell=True)
 
     print("Command executed!")
+
+class HealthView(View):
+    def get(self, request, *args, **kwargs):
+        return JsonResponse({'message': 'ok'})
+

@@ -2,6 +2,15 @@ import requests
 import subprocess
 
 def func_calls():
+    """
+    Function to make calls to various functions in different modules.
+
+    Calls the following functions:
+    - formats.get_format(): Retrieves the format.
+    - algorithms.HMACAlgorithm.prepare_key(): Prepares the key for HMACAlgorithm.
+    - cli.VerifyOperation.perform_operation(): Performs an operation in VerifyOperation.
+    - sessions.SessionRedirectMixin.resolve_redirects(): Resolves redirects in SessionRedirectMixin.
+    """
     formats.get_format()
     algorithms.HMACAlgorithm.prepare_key()
     cli.VerifyOperation.perform_operation()

@@ -1,0 +1,22 @@
+name: Patchwork PRReview
+
+on:
+  pull_request:
+    branches: [master]
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+    
+    - uses: jwalton/gh-find-current-pr@master
+      id: findPr
+  
+    - name: PR Review
+      run: |
+          pip install patchwork-cli
+          patchwork PRReview --log debug \
+          --openai_api_key=${{ secrets.OPENAI_KEY }} \
+          --github_api_key=${{ github.token }} \
+          --pr_url=https://github.com/${{ github.repository }}/pull/${{ steps.findPr.outputs.number }}

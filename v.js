@@ -31,7 +31,7 @@ let body=`<!DOCTYPE html>
 </div>
 </div>
 <iframe src="" id="play" width="100%" height="50%" frameborder="0" allowfullscreen scrolling="no" style="position:absolute"></iframe>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 function init() {
     document.getElementById("jk");

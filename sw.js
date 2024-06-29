@@ -1,6 +1,5 @@
-
 if (location.href.includes('howdz.xyz')) {
-  importScripts('https://cdn.staticfile.org/workbox-sw/7.0.0/workbox-sw.js')
+  importScripts('https://cdnjs.cloudflare.com/ajax/libs/workbox-sw/7.0.0/workbox-sw.js')
   workbox.setConfig({
     debug: false,
   });
@@ -65,3 +64,4 @@ workbox.routing.registerRoute(
     ]
   })
 )
+

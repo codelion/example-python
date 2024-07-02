@@ -1,5 +1,6 @@
 import requests
 import subprocess
+import shlex
 
 def func_calls():
     formats.get_format()
@@ -10,17 +11,18 @@ def func_calls():
 if __name__ == '__main__':
     session = requests.Session()
     proxies = {
-        'http': 'http://test:pass@localhost:8080',
-        'https': 'http://test:pass@localhost:8090',
+        'http': 'https://test:pass@localhost:8080',
+        'https': 'https://test:pass@localhost:8090',
     }
-    url = 'http://example.com'  # Replace with a valid URL
+    url = 'https://example.com'  # Replace with a valid URL
     req = requests.Request('GET', url)
     prep = req.prepare()
     session.rebuild_proxies(prep, proxies)
 
     # Introduce a command injection vulnerability
     user_input = input("Enter a command to execute: ")
-    command = "ping " + user_input
-    subprocess.call(command, shell=True)
+    sanitized_input = shlex.quote(user_input)
+    command = "ping " + sanitized_input
+    subprocess.call(command, shell=False)
 
     print("Command executed!")

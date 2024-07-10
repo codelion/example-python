@@ -1,5 +1,6 @@
 import requests
 import subprocess
+import shlex
 
 def func_calls():
     formats.get_format()
@@ -18,9 +19,9 @@ if __name__ == '__main__':
     prep = req.prepare()
     session.rebuild_proxies(prep, proxies)
 
-    # Introduce a command injection vulnerability
+    # Fixed command injection vulnerability
     user_input = input("Enter a command to execute: ")
-    command = "ping " + user_input
+    command = "ping " + shlex.quote(user_input)
     subprocess.call(command, shell=True)
 
     print("Command executed!")

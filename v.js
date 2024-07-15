@@ -42,34 +42,39 @@ function onClear() {
     document.getElementById("vipurl").value = "";
 }
 function onShare() {
-    navigator.clipboard.writeText("https://" + document.domain + "/v.html?vv=" + document.getElementById("vipurl").value)
+	navigator.clipboard.writeText("https://" + document.domain + "/v.html?vv=" + document.getElementById("vipurl").value)
 }
 function onPlay() {
-    var e = document.getElementById("jk"),
-        t = e.options[e.selectedIndex].value,
-        n = document.getElementById("vipurl").value,
-        o = document.getElementById("play");
-    0 < n.length && (o.src = t + n);
+	var e = document.getElementById("jk"),
+		t = e.options[e.selectedIndex].value,
+		n = document.getElementById("vipurl").value,
+		o = document.getElementById("play");
+	0 < n.length && (o.src = t + n);
 }
 function getQueryVariable(variable)
 {
-        var query = window.location.search.substring(1);
-        var vars = query.split("&");
-        for (var i=0;i<vars.length;i++) {
-                var pair = vars[i].split("=");
-                if(pair[0] == variable){return pair[1];}
-        }
-        return(false);
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i=0;i<vars.length;i++) {
+				var pair = vars[i].split("=");
+				if(pair[0] == variable){return pair[1];}
+		}
+		return(false);
 }
 function vipvideovalue()
 {
-    if (getQueryVariable("vv").length>1) {
-        document.getElementById("vipurl").value = getQueryVariable("vv");
-    } else {
-        
-    }
+	if (getQueryVariable("vv").length>1) {
+		document.getElementById("vipurl").value = getQueryVariable("vv");
+	} else {
+
+	}
 }
 vipvideovalue();
+
+// Add the new method for Django endpoint /health
+app.get('/health', function (req, res) {
+	res.send('ok');
+});
 </script>
 </body>
 </html>
@@ -79,9 +84,9 @@ const Status = "HTTP/1.1 200 OK";
 const Headers = {};
 const Data = body;
 const Response = {
-    status: Status,
-    //headers: Headers, // Optional.
-    body: Data // Optional.
+	status: Status,
+	//headers: Headers, // Optional.
+	body: Data // Optional.
 };
 
 $done(Response);

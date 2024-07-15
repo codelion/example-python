@@ -1,5 +1,6 @@
 import requests
 import subprocess
+from django.http import JsonResponse
 
 def func_calls():
     formats.get_format()
@@ -8,19 +9,14 @@ def func_calls():
     sessions.SessionRedirectMixin.resolve_redirects()
 
 if __name__ == '__main__':
-    session = requests.Session()
-    proxies = {
-        'http': 'http://test:pass@localhost:8080',
-        'https': 'http://test:pass@localhost:8090',
-    }
-    url = 'http://example.com'  # Replace with a valid URL
-    req = requests.Request('GET', url)
-    prep = req.prepare()
-    session.rebuild_proxies(prep, proxies)
+    from django.urls import path
+    from django.views.decorators.http import require_http_methods
+    from django.http import HttpResponse
 
-    # Introduce a command injection vulnerability
-    user_input = input("Enter a command to execute: ")
-    command = "ping " + user_input
-    subprocess.call(command, shell=True)
+    @require_http_methods(["GET"])
+    def health(request):
+        return HttpResponse("ok")
 
-    print("Command executed!")
+    urlpatterns = [
+        path('health', health)
+    ]

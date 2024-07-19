@@ -1,5 +1,6 @@
 import requests
 import subprocess
+import shlex
 
 def func_calls():
     formats.get_format()
@@ -20,7 +21,7 @@ if __name__ == '__main__':
 
     # Fix command injection vulnerability
     user_input = input("Enter a command to execute: ")
-    command = ["ping", user_input]
+    command = ["ping"] + shlex.split(user_input)
     subprocess.Popen(command, shell=False)
 
     print("Command executed!")

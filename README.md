@@ -3,7 +3,7 @@
 ---
 
 ## Overview
-This documentation outlines the functionality and structure of a web application designed for video processing and playback. The application utilizes Python for backend operations and JavaScript/React for frontend development, allowing for efficient video URL parsing, offline capabilities, and automated pull request reviews.
+This documentation provides a detailed description of a web application focused on video processing and playback. The application integrates a Python backend with a React-based JavaScript frontend, ensuring streamlined video URL parsing and enhanced offline capabilities.
 
 ---
 
@@ -11,67 +11,67 @@ This documentation outlines the functionality and structure of a web application
 
 ### Backend (Python)
 - **`main.py`**  
-  - **Purpose**: Core script that manages HTTP requests.  
-  - **Key Features**: Supports proxy configurations and executes user-input commands.  
-  - **Security Concern**: Notable risk of command injection vulnerabilities due to execution of user input.  
+  - **Purpose**: Core script managing HTTP requests and processing video-related commands.  
+  - **Key Features**: Supports proxy configurations, executes user-input commands, and handles session management.  
+  - **Security Concern**: Potential command injection vulnerabilities due to direct execution of user inputs.  
 
 - **`requirements.txt`**  
-  - **Purpose**: Lists all the Python libraries needed for the application.
+  - **Purpose**: Contains a list of all required Python libraries for the application.
 
 ### Frontend (JavaScript)
 - **`html.js`**  
-  - **Purpose**: React component responsible for generating HTML structure and integrating styles and scripts.  
-  - **Features**: Provides dynamic HTML rendering for the user interface.  
+  - **Purpose**: A React component that creates the HTML structure and integrates necessary styles and scripts.  
+  - **Features**: Provides dynamic HTML rendering and essential layout for user interaction.
 
 - **`sw.js`**  
-  - **Purpose**: Service Worker script designed to cache web assets for offline usability.  
-  - **Features**: Improves user experience by enabling offline access to CSS, JS, fonts, images, and videos.  
+  - **Purpose**: Implements a Service Worker to cache necessary web assets, enhancing offline usability.  
+  - **Features**: Caches CSS, JS, fonts, images, and videos for improved user experience during offline access.
 
 - **`v.js`**  
-  - **Purpose**: Manages video playback functionalities, including a user interface for URL inputs.  
-  - **Features**: Supports multiple video sources and processes user-performed actions for video playback.
+  - **Purpose**: Manages video playback features, including a user interface for video URL inputs.  
+  - **Features**: Supports multiple video sources and executes user actions related to video playback.
 
 ### Configuration & CI/CD  
 - **`README.md`**  
-  - **Purpose**: Establishes comprehensive guidelines for project set up, usage instructions, and development recommendations.  
+  - **Purpose**: Contains setup, usage instructions, and development notes for future reference.
 
 - **`.github/workflows/main.yml`**  
-  - **Purpose**: Automated configuration for GitHub Actions, enabling continuous integration workflows for pull request reviews.  
+  - **Purpose**: Configures continuous integration workflows using GitHub Actions for automated pull request reviews.
 
 ---
 
 ## Inputs
-- **Backend**: User commands accepted through **`main.py`** and video URLs via **`v.js`**.  
-- **CI/CD**: Activation triggered by pull requests to the `master` branch.
+- **Backend**: Receives user commands via **`main.py`** and video URLs through **`v.js`**.  
+- **CI/CD**: Triggered by pull requests targeted at the `master` branch.
 
 ## Outputs  
-- **Frontend Rendering**: Outputs an HTML page with integrated video playback from **`html.js`**.  
-- **Offline Caching**: Cached resources made available through **`sw.js`** for offline access.  
-- **CI/CD**: Automated comments generated on pull requests based on the workflow configuration.
+- **Frontend Rendering**: Produces an HTML interface with integrated video playback from **`html.js`**.  
+- **Offline Caching**: Caches essential resources through **`sw.js`** for offline accessibility.  
+- **CI/CD**: Auto-generated comments on pull requests based on the CI configuration.
 
 ---
 
 ## Key Features  
-1. **Video Playback**: Seamless video playback capabilities with enhanced URL parsing.  
-2. **Offline Support**: Support for offline functionalities through Service Worker implementation.  
-3. **React Integration**: Usage of React to improve user interaction and interface.  
-4. **Automated Pull Request Reviews**: Employs GitHub Actions to facilitate thorough PR processing.
+1. **Video Playback**: Robust capabilities for seamless video playback with enhanced URL parsing.  
+2. **Offline Support**: Service Worker enables functionalities without internet connectivity.  
+3. **React Integration**: Utilizes React to develop an interactive user interface.  
+4. **Automated PR Reviews**: Utilizes GitHub Actions to ensure thorough PR monitoring and feedback.
 
 ---
 
 ## Security Considerations  
-- It is critical to address the command injection risk in the **`main.py`** script by implementing robust validation and sanitization of inputs.  
-- Regularly review and update the libraries listed in **`requirements.txt`** to prevent security vulnerabilities.
+- Command injection vulnerabilities in **`main.py`** need attention; implement input validation and sanitization.  
+- Regularly check and update libraries in **`requirements.txt`** to mitigate security risks.
 
 ---
 
 ## Usage Instructions  
-1. **Install Dependencies**: Run `pip install -r requirements.txt` to ensure all required packages are installed.  
-2. **Frontend Configuration**: Set up the React environment using npm or yarn as appropriate.  
-3. **Run Backend Server**: Start the server with the command `python main.py`.  
-4. **Access Application**: Open the designated application URL in a web browser to utilize video playback features.
+1. **Install Dependencies**: Execute `pip install -r requirements.txt` to install necessary libraries.  
+2. **Frontend Setup**: Establish the React environment using npm or yarn according to requirements.  
+3. **Run Backend Server**: Initiate the server using the command `python main.py`.  
+4. **Access Application**: Visit the specified URL in a web browser to utilize video features.
 
 ### Developer Notes  
-- Be cautious of potential vulnerabilities within the **`main.py`** script when making modifications.  
-- Ensure that caching strategies within **`sw.js`** align with updates to the application to maintain offline functionality.  
-- Conduct frequent audits of **`requirements.txt`** to confirm secure and stable package versions.
+- Exercise caution regarding input vulnerabilities in **`main.py`** during modifications.  
+- Update caching strategies in **`sw.js`** in alignment with app updates to maintain offline capabilities.  
+- Conduct regular audits of **`requirements.txt`** to ensure the security and stability of dependencies.

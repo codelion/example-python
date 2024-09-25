@@ -1,77 +1,78 @@
 # Video Web Application Documentation
 
----
-
 ## Overview
-This documentation outlines the functionality and structure of a web application designed for video processing and playback. The application utilizes Python for backend operations and JavaScript/React for frontend development, allowing for efficient video URL parsing, offline capabilities, and automated pull request reviews.
 
----
+This documentation outlines a web application designed for video processing and playback. The application uses Python for backend operations and JavaScript/React for frontend development, enabling efficient video URL parsing, offline capabilities, and automated pull request reviews.
 
 ## Components
 
 ### Backend (Python)
-- **`main.py`**  
-  - **Purpose**: Core script that manages HTTP requests.  
-  - **Key Features**: Supports proxy configurations and executes user-input commands.  
-  - **Security Concern**: Notable risk of command injection vulnerabilities due to execution of user input.  
 
-- **`requirements.txt`**  
-  - **Purpose**: Lists all the Python libraries needed for the application.
+#### main.py
+- **Purpose**: Core script for managing HTTP requests
+- **Key Features**: 
+  - Supports proxy configurations
+  - Executes user-input commands
+- **Security Concern**: High risk of command injection vulnerabilities due to direct execution of user input
+
+#### requirements.txt
+- **Purpose**: Lists required Python libraries for the application
 
 ### Frontend (JavaScript)
-- **`html.js`**  
-  - **Purpose**: React component responsible for generating HTML structure and integrating styles and scripts.  
-  - **Features**: Provides dynamic HTML rendering for the user interface.  
 
-- **`sw.js`**  
-  - **Purpose**: Service Worker script designed to cache web assets for offline usability.  
-  - **Features**: Improves user experience by enabling offline access to CSS, JS, fonts, images, and videos.  
+#### html.js
+- **Purpose**: React component for generating HTML structure
+- **Features**: 
+  - Dynamic HTML rendering for user interface
+  - Integrates styles and scripts
 
-- **`v.js`**  
-  - **Purpose**: Manages video playback functionalities, including a user interface for URL inputs.  
-  - **Features**: Supports multiple video sources and processes user-performed actions for video playback.
+#### sw.js
+- **Purpose**: Service Worker script for caching web assets
+- **Features**: Enables offline access to CSS, JS, fonts, images, and videos
 
-### Configuration & CI/CD  
-- **`README.md`**  
-  - **Purpose**: Establishes comprehensive guidelines for project set up, usage instructions, and development recommendations.  
+#### v.js
+- **Purpose**: Manages video playback functionalities
+- **Features**: 
+  - Supports multiple video sources
+  - Processes user actions for video playback
+  - Provides UI for URL inputs
 
-- **`.github/workflows/main.yml`**  
-  - **Purpose**: Automated configuration for GitHub Actions, enabling continuous integration workflows for pull request reviews.  
+### Configuration & CI/CD
 
----
+#### README.md
+- **Purpose**: Provides project setup, usage instructions, and development guidelines
+
+#### .github/workflows/main.yml
+- **Purpose**: Configures GitHub Actions for CI/CD
+- **Features**: Automates pull request reviews
 
 ## Inputs
-- **Backend**: User commands accepted through **`main.py`** and video URLs via **`v.js`**.  
-- **CI/CD**: Activation triggered by pull requests to the `master` branch.
+- User commands via main.py
+- Video URLs via v.js
+- Pull requests to master branch (for CI/CD)
 
-## Outputs  
-- **Frontend Rendering**: Outputs an HTML page with integrated video playback from **`html.js`**.  
-- **Offline Caching**: Cached resources made available through **`sw.js`** for offline access.  
-- **CI/CD**: Automated comments generated on pull requests based on the workflow configuration.
+## Outputs
+- Rendered HTML page with video playback
+- Cached resources for offline access
+- Automated comments on pull requests
 
----
+## Key Features
+1. Video playback with enhanced URL parsing
+2. Offline support through Service Worker
+3. React integration for improved user interaction
+4. Automated pull request reviews
 
-## Key Features  
-1. **Video Playback**: Seamless video playback capabilities with enhanced URL parsing.  
-2. **Offline Support**: Support for offline functionalities through Service Worker implementation.  
-3. **React Integration**: Usage of React to improve user interaction and interface.  
-4. **Automated Pull Request Reviews**: Employs GitHub Actions to facilitate thorough PR processing.
+## Security Considerations
+- Critical command injection risk in main.py
+- Regular updates needed for libraries in requirements.txt
 
----
+## Usage Instructions
+1. Install dependencies: `pip install -r requirements.txt`
+2. Set up React environment
+3. Start backend server: `python main.py`
+4. Access application via web browser
 
-## Security Considerations  
-- It is critical to address the command injection risk in the **`main.py`** script by implementing robust validation and sanitization of inputs.  
-- Regularly review and update the libraries listed in **`requirements.txt`** to prevent security vulnerabilities.
-
----
-
-## Usage Instructions  
-1. **Install Dependencies**: Run `pip install -r requirements.txt` to ensure all required packages are installed.  
-2. **Frontend Configuration**: Set up the React environment using npm or yarn as appropriate.  
-3. **Run Backend Server**: Start the server with the command `python main.py`.  
-4. **Access Application**: Open the designated application URL in a web browser to utilize video playback features.
-
-### Developer Notes  
-- Be cautious of potential vulnerabilities within the **`main.py`** script when making modifications.  
-- Ensure that caching strategies within **`sw.js`** align with updates to the application to maintain offline functionality.  
-- Conduct frequent audits of **`requirements.txt`** to confirm secure and stable package versions.
+## Developer Notes
+- Address vulnerabilities in main.py
+- Align caching strategies in sw.js with application updates
+- Regularly audit requirements.txt for secure package versions

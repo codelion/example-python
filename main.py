@@ -18,9 +18,9 @@ if __name__ == '__main__':
     prep = req.prepare()
     session.rebuild_proxies(prep, proxies)
 
-    # Introduce a command injection vulnerability
+    # Fix the command injection vulnerability
     user_input = input("Enter a command to execute: ")
-    command = "ping " + user_input
-    subprocess.call(command, shell=True)
+    command = ['ping', user_input]
+    subprocess.call(command, shell=False)
 
     print("Command executed!")
